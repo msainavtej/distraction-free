@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to use | Focus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #2E3440; --mute: #4C566A; --line: #D8DEE9; --wash: #ECEFF4; --accent: #5E81AC;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: #fff; color: var(--ink);
+      font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+      font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+    .back { color: var(--accent); text-decoration: none; font-weight: 500; font-size: 15px; }
+    .back:hover { text-decoration: underline; text-underline-offset: 4px; }
+    h1 { margin: 20px 0 6px; font-size: 32px; font-weight: 700; color: #000; line-height: 1.2; }
+    .lead { margin: 0 0 8px; color: var(--mute); font-size: 17px; }
+    h2 { margin: 44px 0 10px; font-size: 21px; font-weight: 600; letter-spacing: -0.01em; }
+    h2 .n { color: var(--accent); margin-right: 8px; font-variant-numeric: tabular-nums; }
+    p { margin: 0 0 12px; }
+    ul, ol { margin: 0 0 12px; padding-left: 22px; }
+    li { margin: 4px 0; }
+    code {
+      background: var(--wash); border-radius: 6px; padding: 1px 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em;
+    }
+    .note {
+      border-left: 3px solid var(--accent); background: var(--wash);
+      border-radius: 0 10px 10px 0; padding: 12px 16px; margin: 14px 0; color: var(--ink);
+    }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 15px; }
+    th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); }
+    th { color: var(--mute); font-weight: 500; font-size: 14px; }
+    kbd {
+      background: #fff; border: 1px solid var(--line); border-bottom-width: 2px;
+      border-radius: 6px; padding: 1px 7px; font-family: inherit; font-size: 0.9em;
+    }
+    details { border-bottom: 1px solid var(--line); padding: 12px 0; }
+    summary { cursor: pointer; font-weight: 500; }
+    details p { margin: 8px 0 0; color: var(--mute); }
+    footer { margin-top: 48px; color: var(--mute); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="/">&larr; Back to the player</a>
+
+    <h1>How to use</h1>
+    <p class="lead">A distraction-free place to organize your lectures. Group YouTube videos into playlists, then watch them without recommendations, comments or sidebars.</p>
+
+    <h2><span class="n">1</span>Create a playlist</h2>
+    <ol>
+      <li>When you open the app, the middle of the page shows <strong>Create a playlist</strong>.</li>
+      <li>Type a name, for example <code>Linear Algebra</code> or <code>Week 3 Physics</code>.</li>
+      <li>Click <strong>Create</strong> (or press <kbd>Enter</kbd>). The new playlist appears in the <strong>Playlists</strong> list on the right and opens straight away.</li>
+    </ol>
+    <p>You can make as many playlists as you like, for example one per subject or exam.</p>
+
+    <h2><span class="n">2</span>Add videos</h2>
+    <ol>
+      <li>Open a playlist by clicking it in the list on the right. It expands to show its videos.</li>
+      <li>Paste a YouTube link or video ID into the bar at the top and click <strong>Add</strong>.</li>
+      <li>The video appears in the playlist with its title and thumbnail. Adding a video never starts playback.</li>
+    </ol>
+    <p>These formats all work:</p>
+    <ul>
+      <li><code>https://www.youtube.com/watch?v=VIDEO_ID</code></li>
+      <li><code>https://youtu.be/VIDEO_ID</code></li>
+      <li><code>https://www.youtube.com/embed/VIDEO_ID</code>, <code>/shorts/VIDEO_ID</code> and <code>/live/VIDEO_ID</code></li>
+      <li>The bare 11-character video ID on its own</li>
+    </ul>
+    <div class="note">The bar is greyed out until a playlist is open, because videos are always added to the playlist you have open. A video can only be in a playlist once, but the same video can be in different playlists.</div>
+
+    <h2><span class="n">3</span>Play a video</h2>
+    <p>The player stays hidden until you pick something. Click any video in the open playlist and the player appears and starts playing it. Click the same video again to resume it if it is paused.</p>
+    <p>Clicking the video itself also plays or pauses it. When a video ends, the next one in the playlist starts automatically. After the last video you see an <strong>End of playlist</strong> screen with a <strong>Replay this video</strong> button, so YouTube never gets to show you suggestions.</p>
+
+    <h2><span class="n">4</span>Controls</h2>
+    <table>
+      <thead><tr><th>Control</th><th>What it does</th></tr></thead>
+      <tbody>
+        <tr><td>Play / pause button</td><td>Starts or pauses the video</td></tr>
+        <tr><td>Previous / next buttons</td><td>Jump to the previous or next video in the open playlist</td></tr>
+        <tr><td>Seek bar</td><td>Drag to move anywhere in the video. Current time is on the left, total length on the right</td></tr>
+        <tr><td>Speed button (<code>1×</code>)</td><td>Cycles through 0.75×, 1×, 1.25×, 1.5× and 2×. It resets to 1× for each new video</td></tr>
+      </tbody>
+    </table>
+
+    <h2><span class="n">5</span>Keyboard shortcuts</h2>
+    <table>
+      <thead><tr><th>Key</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td><kbd>Space</kbd></td><td>Play or pause</td></tr>
+        <tr><td><kbd>&rarr;</kbd></td><td>Skip forward 10 seconds</td></tr>
+        <tr><td><kbd>&larr;</kbd></td><td>Skip back 10 seconds</td></tr>
+      </tbody>
+    </table>
+    <p>Shortcuts work while a video is selected, and not while you are typing in the Add or Playlist name fields.</p>
+
+    <h2><span class="n">6</span>Manage your playlists</h2>
+    <ul>
+      <li><strong>Start another playlist:</strong> click <strong>+ New</strong> next to the Playlists heading to return to the create box.</li>
+      <li><strong>Switch playlists:</strong> click a different one in the list. The player hides until you choose a video.</li>
+      <li><strong>Remove one video:</strong> hover over it in the list and click the &times; on its right.</li>
+      <li><strong>Empty a playlist:</strong> click <strong>Clear</strong> at the bottom of the open playlist. This removes its videos but keeps the playlist.</li>
+      <li><strong>Delete a playlist:</strong> click the &times; on its row. You are asked to confirm if it contains videos.</li>
+    </ul>
+
+    <h2><span class="n">7</span>Your data is saved in your browser</h2>
+    <p>Playlists are stored in your browser (localStorage) automatically, so they are still there after a refresh or restart. On a new visit you land on the create screen with all your playlists listed on the right.</p>
+    <div class="note">Playlists live only in the browser you made them in. They do not sync between devices or browsers, and they are lost if you clear your site data or use a private/incognito window.</div>
+
+    <h2><span class="n">8</span>Good to know</h2>
+    <ul>
+      <li><strong>Ads:</strong> the app cannot block YouTube ads. If a video has ads, they still play. An ad blocker or YouTube Premium removes them.</li>
+      <li><strong>Videos that will not play:</strong> some uploaders disable embedding. Those videos show an error in the player. Remove them and try another upload.</li>
+      <li><strong>Titles show as "Video &hellip;":</strong> the title could not be fetched (for example when you are offline). The video still works.</li>
+      <li><strong>Internet needed:</strong> videos stream from YouTube, so you need a connection to play them.</li>
+    </ul>
+
+    <h2><span class="n">9</span>Coming soon</h2>
+    <p>Uploading notes, so you can keep your notes next to your lectures, will be available within 24 hours.</p>
+
+    <h2><span class="n">10</span>Quick answers</h2>
+    <details>
+      <summary>My playlists disappeared.</summary>
+      <p>Check that you are in the same browser and not in a private window, and that site data was not cleared. Playlists cannot be recovered once the browser data is gone.</p>
+    </details>
+    <details>
+      <summary>The Add button is greyed out.</summary>
+      <p>No playlist is open. Create one, or click an existing playlist on the right.</p>
+    </details>
+    <details>
+      <summary>It says the link is not a YouTube link.</summary>
+      <p>Copy the address from the browser's address bar or YouTube's Share button. Playlist and channel links are not supported, only single-video links.</p>
+    </details>
+    <details>
+      <summary>I clicked a video and nothing played.</summary>
+      <p>The uploader may have disabled embedding, or your browser may be blocking third-party content from YouTube. Try another video or turn off the blocker for this site.</p>
+    </details>
+
+    <footer>
+      <a class="back" href="/">&larr; Back to the player</a>
+    </footer>
+  </div>
+</body>
+</html>

@@ -333,8 +333,18 @@ export default function App() {
 
   return (
     <div className="flex min-h-screen flex-col bg-white font-sans text-nord-ink antialiased">
-      {/* Logo: pinned to the far top-left of the page */}
-      <div className="px-4 pt-4 text-3xl font-bold text-black">Focus- Organize lectures and notes.</div>
+      {/* Logo at the far top-left, "How to use" link at the far top-right */}
+      <header className="flex items-start justify-between gap-4 px-4 pt-4">
+        <div className="text-3xl font-bold text-black">Focus- Organize lectures and notes.</div>
+        <a
+          href="/how-to-use.html"
+          target="_blank"
+          rel="noopener"
+          className="shrink-0 pt-2 text-[15px] font-medium text-nord-accent underline-offset-4 hover:underline focus-visible:underline"
+        >
+          How to use
+        </a>
+      </header>
 
       <div className="mx-auto w-full max-w-6xl flex-1 px-5 pb-8 pt-4 sm:px-8">
         {/* Add bar (adds to the open playlist) */}
