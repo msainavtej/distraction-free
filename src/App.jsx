@@ -332,11 +332,11 @@ export default function App() {
     "grid h-9 w-9 place-items-center rounded-full text-nord-mute transition hover:bg-nord-wash hover:text-nord-ink disabled:opacity-30 disabled:hover:bg-transparent";
 
   return (
-    <div className="min-h-screen bg-white font-sans text-nord-ink antialiased">
+    <div className="flex min-h-screen flex-col bg-white font-sans text-nord-ink antialiased">
       {/* Logo: pinned to the far top-left of the page */}
-      <div className="px-4 pt-4 text-3xl font-bold text-black">Distraction Free Player</div>
+      <div className="px-4 pt-4 text-3xl font-bold text-black">Focus- Organize lectures and notes.</div>
 
-      <div className="mx-auto max-w-6xl px-5 pb-8 pt-4 sm:px-8">
+      <div className="mx-auto w-full max-w-6xl flex-1 px-5 pb-8 pt-4 sm:px-8">
         {/* Add bar (adds to the open playlist) */}
         <form onSubmit={addVideo} className="flex gap-2">
           <input
@@ -599,6 +599,11 @@ export default function App() {
           </aside>
         </div>
       </div>
+
+      {/* Footer notice */}
+      <footer className="px-4 pb-4 text-3xl font-bold text-black">
+        Uploading Notes feature will be available within 24 hrs.
+      </footer>
     </div>
   );
 }
